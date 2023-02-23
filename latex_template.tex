@@ -1,0 +1,197 @@
+\documentclass[a4paper, 12pt]{report}
+\usepackage[utf8]{inputenc}
+
+% Base styles
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{
+ a4paper,
+ left=1.5in,
+ right=1in,
+ top=1.5in,
+ bottom=1in,
+}
+
+% Indexing
+\usepackage{imakeidx}
+\makeindex[columns=3, title=Alphabetical Index]
+
+% References
+\usepackage{hyperref}
+\renewcommand{\bibname}{References}
+\usepackage{natbib}
+
+% Acronyms
+\usepackage[acronym, automake]{glossaries}
+
+\makeglossaries
+
+\newacronym{os}{OS}{Operating Systems}
+\newacronym{http}{HTTP}{Hyper Text Transfer Protocol}
+\newacronym{ram}{RAM}{Random Access Memory}
+
+% Images
+\graphicspath{ {./imgs/} }
+
+% Title Page
+\title{Report Title}
+
+\author{Author name\\ Author description}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\newpage
+
+% Abstract
+\begin{abstract}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus arcu bibendum at varius vel. Vitae sapien pellentesque habitant morbi tristique senectus. Tellus at urna condimentum mattis. Nulla aliquet enim tortor at auctor urna. Condimentum mattis pellentesque id nibh. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc consequat. Cras semper auctor neque vitae. Lectus proin nibh nisl condimentum id venenatis. Sit amet est placerat in egestas erat imperdiet. At tempor commodo ullamcorper a lacus. Sed pulvinar proin gravida hendrerit lectus a. Aliquet bibendum enim facilisis gravida neque convallis a cras. Morbi tempus iaculis urna id volutpat lacus laoreet non. Ut ornare lectus sit amet est placerat in egestas. Pulvinar sapien et ligula ullamcorper malesuada. Dignissim enim sit amet venenatis urna cursus eget nunc. Neque aliquam vestibulum morbi blandit cursus risus at ultrices. Mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor.
+\end{abstract}
+
+% Tables of Contents
+\tableofcontents
+
+% List of Figures
+\listoffigures
+
+% List of tables
+\listoftables
+
+\newpage
+\printglossary[type=\acronymtype]
+
+
+
+\chapter{Chapters and Sections}
+\section{Sample section 1}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Urna duis convallis convallis tellus id. Tristique senectus et netus et malesuada fames. In est ante in nibh mauris cursus mattis. At quis risus sed vulputate. Sit amet massa vitae tortor condimentum lacinia quis. Egestas purus viverra accumsan in nisl nisi scelerisque eu. Integer quis auctor elit sed vulputate mi sit amet. Sapien eget mi proin sed libero. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Dapibus ultrices in iaculis nunc sed augue lacus. Urna condimentum mattis pellentesque id. At auctor urna nunc id cursus metus aliquam eleifend mi. Eget mauris pharetra et ultrices neque ornare aenean. Feugiat sed lectus vestibulum mattis ullamcorper velit.
+
+\section{Sample section 2}
+Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tempor commodo ullamcorper a lacus vestibulum sed arcu. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Mattis enim ut tellus elementum sagittis vitae et. Id aliquet risus feugiat in ante. Vulputate mi sit amet mauris. Faucibus et molestie ac feugiat sed lectus vestibulum mattis. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. A cras semper auctor neque vitae tempus. Justo nec ultrices dui sapien eget mi proin sed. Imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor. Tincidunt tortor aliquam nulla facilisi. Et pharetra pharetra massa massa ultricies. Porta lorem mollis aliquam ut. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Fames ac turpis egestas maecenas. Justo laoreet sit amet cursus sit amet dictum. Auctor eu augue ut lectus arcu.
+
+\subsection{Sample subsection 1}
+ Tincidunt tortor aliquam nulla facilisi. Et pharetra pharetra massa massa ultricies. Porta lorem mollis aliquam ut. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Fames ac turpis egestas maecenas. Justo laoreet sit amet cursus sit amet dictum. Auctor eu augue ut lectus arcu.
+ 
+\subsection{Sample subsection 2}
+ Tincidunt tortor aliquam nulla facilisi. Et pharetra pharetra massa massa ultricies. Porta lorem mollis aliquam ut. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Fames ac turpis egestas maecenas. Justo laoreet sit amet cursus sit amet dictum. Auctor eu augue ut lectus arcu.
+ 
+\subsection{Sample subsection 3}
+ Tincidunt tortor aliquam nulla facilisi. Et pharetra pharetra massa massa ultricies. Porta lorem mollis aliquam ut. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Fames ac turpis egestas maecenas. Justo laoreet sit amet cursus sit amet dictum. Auctor eu augue ut lectus arcu.
+ 
+\subsubsection{Sample subsubsection 1}
+Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Fames ac turpis egestas maecenas. Justo laoreet sit amet cursus sit amet dictum. Auctor eu augue ut lectus arcu.
+
+\subsubsection{Sample subsubsection 2}
+Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Fames ac turpis egestas maecenas. Justo laoreet sit amet cursus sit amet dictum. Auctor eu augue ut lectus arcu.
+
+
+\section{Sample section 3}
+Viverra adipiscing at in tellus integer feugiat scelerisque. Nibh tortor id aliquet lectus proin nibh nisl. Venenatis urna cursus eget nunc scelerisque viverra mauris in. In massa tempor nec feugiat nisl. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Arcu odio ut sem nulla pharetra diam. Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Eros in cursus turpis massa tincidunt dui ut. Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Hendrerit dolor magna eget est lorem ipsum. Diam ut venenatis tellus in.
+
+
+
+
+
+\chapter{Text formatting}
+\section{Bold}
+Lorem \textbf{ipsum} dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et \textbf{dolore} magna aliqua.
+
+\section{Italic}
+Lorem \textit{ipsum dolor sit amet}, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut \textit{labore et dolore} magna aliqua.
+
+\section{Underline}
+Lorem \underline{ipsum dolor sit amet}, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+\section{Emphasising text}
+\emph{Lorem ipsum dolor sit amet}, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+
+
+\chapter{Lists}
+\section{Unordered Lists}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+\begin{itemize}
+	\item Item 1
+	\item Item 2
+	\item Item 3
+\end{itemize}
+
+\section{Ordered Lists}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+\begin{enumerate}
+	\item Item 1
+	\item Item 2
+	\item Item 3
+\end{enumerate}
+
+\section{Descriptive Lists}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+\begin{description}
+	\item Item 1
+	\item[Item 2 Description] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	\item[Item 3 Description] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+\end{description}
+
+\section{Nested Lists}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+\begin{itemize}
+	\item Item 1
+	\begin{enumerate}
+		\item Item 2.1
+		\item Item 2.2
+		\item Item 2.3
+	\end{enumerate}
+	\item Item 3
+	\begin{description}
+		\item[Item 2 Description] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	\item[Item 3 Description] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	\end{description}
+\end{itemize}
+
+
+
+\chapter{Figures}
+\section{Images}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.(Figure \ref{fig:sample_img2})
+
+\vspace{.5cm}
+\includegraphics[width=5cm]{sample_img1}
+
+\begin{figure}[h] % h - position of the image (close to text)
+	\includegraphics[width=\textwidth]{sample_img2}
+	\caption{Nature Wallpaper}
+	\label{fig:sample_img2}
+	\centering
+\end{figure}
+
+
+
+
+\chapter{Referencing}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultrices in iaculis nunc sed augue lacus. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Semper quis lectus nulla at. Risus in hendrerit gravida rutrum. Tortor pretium viverra suspendisse potenti. Tempor nec feugiat nisl pretium fusce id. Pellentesque massa placerat duis ultricies lacus sed turpis tincidunt id. Pharetra magna ac placerat vestibulum lectus mauris ultrices. At risus viverra adipiscing at in tellus integer feugiat. Tortor consequat id porta nibh venenatis cras sed. Senectus et netus et malesuada fames ac turpis egestas maecenas. Quam nulla porttitor massa id neque. Id interdum velit laoreet id donec ultrices tincidunt arcu non. Leo urna molestie at elementum eu facilisis sed odio morbi. Aenean euismod elementum nisi quis eleifend quam. Lectus magna fringilla urna porttitor rhoncus dolor purus. Dui nunc mattis enim ut tellus elementum. \citep{4160265}
+
+Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Aenean euismod elementum nisi quis eleifend quam adipiscing. Non pulvinar neque laoreet suspendisse interdum. Amet nisl purus in mollis nunc sed. Enim facilisis gravida neque convallis a cras semper auctor neque. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus aenean. Potenti nullam ac tortor vitae purus faucibus. Purus in mollis nunc sed id. Enim blandit volutpat maecenas volutpat blandit aliquam. Donec adipiscing tristique risus nec. Tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Sed augue lacus viverra vitae congue eu consequat. Porta non pulvinar neque laoreet suspendisse interdum consectetur libero. Sem nulla pharetra diam sit. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida.\citep{ibm}
+
+Blandit aliquam etiam erat velit scelerisque in. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Lectus mauris ultrices eros in cursus turpis. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Nunc sed blandit libero volutpat sed cras ornare arcu. Cras adipiscing enim eu turpis. Sodales ut eu sem integer vitae justo. Lorem ipsum dolor sit amet consectetur. Justo donec enim diam vulputate ut pharetra sit amet. Pharetra sit amet aliquam id diam maecenas ultricies. At tempor commodo ullamcorper a lacus vestibulum sed. \citep{clear2018atomic}
+
+
+
+\chapter{Indexing}
+Lorem \textbf{ipsum}\index{ipsum} dolor sit amet, consectetur adipiscing \textbf{elit}\index{elit}, sed do eiusmod tempor incididunt ut labore et \textbf{dolore magna aliqua}\index{dolore}. Sed risus ultricies tristique nulla.
+
+
+% Bibliograpy
+\bibliographystyle{agsm}
+\bibliography{./bibs/bibtexs.bib}
+
+
+% Indexes
+\printindex
+
+\end{document}
+
