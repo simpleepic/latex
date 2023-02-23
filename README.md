@@ -1,4 +1,4 @@
-# LaTeX Templates
+# LaTeX Template
 This repository contains a collection of LaTeX templates that can be used for various types of documents.
 
 # Getting Started
