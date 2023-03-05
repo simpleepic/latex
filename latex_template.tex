@@ -23,6 +23,16 @@
 
 % Drawing
 \usepackage[pdftex]{pict2e}
+\usepackage{tikz}
+
+% Theorems and Proofs
+\usepackage{amsthm} %  For Proofs
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}{Lemma}[theorem]
+
+% Plotting Graphs
+\usepackage{pgfplots}
 
 % Indexing
 \usepackage{imakeidx}
@@ -384,6 +394,117 @@ Lorem ipsum dolor sit amet, \colorbox{orange}{consectetur adipiscing elit}, sed 
 	\linethickness{0.5mm}
 	\put(2, 2){\color{blue}\circle{3}}
 \end{picture}
+
+
+
+\chapter{TikZ Package for Complex Drawings}
+\section{Line Drawing}
+\begin{tikzpicture}
+	\draw (-2, 0) -- (2, 0);
+	\draw (0, -2) -- (0, 2);
+\end{tikzpicture}
+
+\section{Grids}
+\begin{tikzpicture}
+	\draw[step=0.5cm, gray, very thin](-2, -2) grid (2, 2);
+	\draw[ultra thick] (-2, 0) -- (2, 0);
+	\draw[ultra thick] (0, -2) -- (0, 2);
+	\draw (0, 0) circle (2cm);
+\end{tikzpicture}
+
+\section{Curves}
+\begin{tikzpicture}
+	\draw (0, 0) .. controls(1, 2) and (3, -2) .. (4, 0);
+	\filldraw[gray] (1, 2) circle (2pt)
+					(3, -2) circle (2pt);
+\end{tikzpicture}
+
+\section{Looping Elements}
+\begin{tikzpicture}
+	\foreach \x in {1,...,10}
+		\draw (\x, 0) circle (0.4cm);
+\end{tikzpicture}
+
+\section{Tree Structure}
+\begin{tikzpicture}
+	\node {root}
+		child {node {left}}
+		child {node {right}
+			child {node {rc 1}}
+			child {node {rc 2}}
+		};
+\end{tikzpicture}
+
+\section{Colored Diagrams}
+\begin{tikzpicture}[thick, fill opacity=0.5]
+	\filldraw[fill=red] (0, 0) circle (2cm);
+	\filldraw[fill=green] (2, 0) circle (2cm);
+	\filldraw[fill=blue] (1, 1) circle (2cm);
+\end{tikzpicture}
+
+\section{Shades}
+\begin{tikzpicture}
+	\shade[ball color=white] (0, 0) circle (0.4cm);
+	\shade[ball color=green] (1, 0) circle (0.4cm);
+	\shade[ball color=yellow] (2, 0) circle (0.4cm);
+	\shade[ball color=red] (3, 0) circle (0.4cm);
+\end{tikzpicture}
+
+
+
+\chapter{Graph Plotting}
+\section{2D plots}
+\begin{tikzpicture}
+	\begin{axis}
+		\addplot[color=blue]{exp(x)};
+	\end{axis}
+\end{tikzpicture}
+
+\section{2D plots}
+\begin{tikzpicture}
+	\begin{axis}[axis lines=left, xlabel=\(x\), ylabel={\(f(x)\)}]
+		\addplot[color=blue]{x^2-2*x-1};
+		\addlegendentry{\(x^2-2*x-1\)}
+	\end{axis}
+\end{tikzpicture}
+
+\section{3D plots}
+\begin{tikzpicture}
+	\begin{axis}
+		\addplot3[surf]{exp(-x^2-y^2)*x};
+	\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}[scale=1.5]
+	\begin{axis}[axis lines=left, xlabel=\(x\), ylabel=\(y\), zlabel=\(z\), colormap/greenyellow]
+		\addplot3[mesh, samples=50, domain=-8:8]{sin(deg(sqrt(x^2+y^2)))/sqrt(x^2+y^2)};
+		\addlegendentry{\(\frac{sin(r)}{r}\)}
+	\end{axis}
+\end{tikzpicture}
+
+
+
+\chapter{Theorems and Proofs}
+\begin{theorem}
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+\end{theorem}
+
+\begin{theorem}[Pythagorean Theorem]
+ The sum of the squares on the legs of a right triangle is equal to the square on the hypotenuse
+ \[a^n + b^n = c^n\]
+\end{theorem}
+
+\begin{corollary}
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+\end{corollary}
+
+\begin{lemma}
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+\end{lemma}
+
+\begin{proof}
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+\end{proof}
 
 
 
